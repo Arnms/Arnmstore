@@ -2,9 +2,18 @@
 @import '../../../assets/scss/mixins';
 
 .meta {
+  max-width: $layout-post-single-width;
+  padding: 0 15px;
+  margin: 0 auto;
+
   &__date {
-    font-style: italic;
-    text-align: right;
+    max-width: $layout-post-width;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $typographic-font-family-bold;
+    text-align: left;
+    color: $color-blue-gray-d1;
   }
 
 }

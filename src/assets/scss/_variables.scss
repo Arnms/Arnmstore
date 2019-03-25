@@ -12,8 +12,23 @@ $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
+$color-amber-d4: #ff6f00;
+
+$color-orange-d3: #ef6c00;
+
+$color-brown-d1: #6d4c41;
+
+$color-blue-gray-d1: #546e7a;
+
+$color-gray-d1: #757575;
+$color-gray-d3: #424242;
+
 // Typographic
-$typographic-font-family: 'Nanum Gothic', sans-serif, 'Noto Sans KR', sans-serif, 'Nanum Pen Script', cursive, 'Nanum Brush Script', cursive;
+$typographic-font-family: 'Nanum Gothic', sans-serif;
+$typographic-font-family-sub: 'Noto Sans KR', sans-serif;
+$typographic-font-family-pen: 'Nanum Pen Script', cursive;
+$typographic-font-family-brush: 'Nanum Brush Script', cursive;
+$typographic-font-family-bold: 'Do Hyeon', sans-serif;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
