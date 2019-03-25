@@ -26,7 +26,9 @@ const Post = ({ post }) => {
         <Tags tags={tags} tagSlugs={tagSlugs} />
       </div>
 
-      <Link className={styles['post__home-button']} to="/">All Articles</Link>
+      <div className={styles['post__underline']}></div>
+
+      <Link className={styles['post__home-button']} to="/">Home</Link>
 
       <div className={styles['post__comments']}>
         <Comments postSlug={post.fields.slug} postTitle={post.frontmatter.title} />

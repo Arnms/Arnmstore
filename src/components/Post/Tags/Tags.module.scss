@@ -16,16 +16,19 @@
       &-link {
         display: inline-block;
         height: 24px;
-        padding: 0 4px;
+        padding: 0 15px;
         font-size: 1.2rem;
         font-family: $typographic-font-family-pen;
         line-height: 1.5rem;
         text-decoration: none;
-        color: $color-amber-d4;
+        color: $color-white;
+        background-color: $color-amber-d4;
+        border-radius: $button-border-radius;
 
         &:hover,
         &:focus {
-          color: $color-primary;
+          color: $color-white;
+          background-color: $color-amber-d3;
         }
 
       }

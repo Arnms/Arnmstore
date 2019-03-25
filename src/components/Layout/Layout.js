@@ -8,7 +8,7 @@ const Layout = ({ children, title, description }) => (
       <html lang="ko" />
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Brush+Script|Nanum+Gothic|Nanum+Pen+Script|Noto+Sans+KR" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Brush+Script|Nanum+Gothic|Nanum+Pen+Script|Noto+Sans+KR|Sunflower:300" rel="stylesheet"></link>
     </Helmet>
     {children}
   </div>

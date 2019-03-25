@@ -6,8 +6,17 @@
   padding: 0 15px;
   margin: 0 auto;
 
+  &__underline {
+    max-width: $layout-post-width;
+    border-bottom: 1px solid $color-gray-border;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
   &__title {
-    font-family: $typographic-font-family-sub;
+    font-family: $typographic-font-family-title;
     font-size: $typographic-base-font-size * 2;
     max-width: $layout-post-width;
     margin-left: auto;

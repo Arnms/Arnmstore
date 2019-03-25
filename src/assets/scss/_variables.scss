@@ -12,6 +12,9 @@ $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
+$color-red-d1: #e53935;
+
+$color-amber-d3: #ff8f00;
 $color-amber-d4: #ff6f00;
 
 $color-orange-d3: #ef6c00;
@@ -20,12 +23,14 @@ $color-brown-d1: #6d4c41;
 
 $color-blue-gray-d1: #546e7a;
 
+$color-gray-l5: #fafafa;
 $color-gray-d1: #757575;
 $color-gray-d3: #424242;
 
 // Typographic
 $typographic-font-family: 'Nanum Gothic', sans-serif;
-$typographic-font-family-sub: 'Noto Sans KR', sans-serif;
+$typographic-font-family-sub: 'Sunflower', sans-serif;
+$typographic-font-family-title: 'Noto Sans KR', sans-serif;
 $typographic-font-family-pen: 'Nanum Pen Script', cursive;
 $typographic-font-family-brush: 'Nanum Brush Script', cursive;
 $typographic-font-family-bold: 'Do Hyeon', sans-serif;
@@ -47,10 +52,10 @@ $button-height: 35px;
 $button-border-radius: 20px;
 
 // Layout
-$layout-post-single-width: 945px;
+$layout-post-single-width: 1075px;
 $layout-post-width: $layout-post-single-width - 305px;
 
-$layout-width: 1070px;
+$layout-width: 1200px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
-$layout-breakpoint-lg: 1100px;
+$layout-breakpoint-lg: 1200px;

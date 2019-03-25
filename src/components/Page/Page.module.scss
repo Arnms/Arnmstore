@@ -2,7 +2,7 @@
 @import '../../assets/scss/mixins';
 
 .page {
-  @include margin-bottom(2);
+  height: 100%;
 
   &__inner {
     padding: 25px 20px;

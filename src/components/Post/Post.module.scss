@@ -2,6 +2,15 @@
 @import '../../assets/scss/mixins';
 
 .post {
+  &__underline {
+    max-width: $layout-post-width;
+    border-bottom: 1px solid $color-gray-border;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
   &__footer {
     max-width: $layout-post-width;
     margin: 0 auto;
@@ -49,13 +58,13 @@
       padding: 0;
     }
 
-    &__home-button {
+    /*&__home-button {
       position: fixed;
       max-width: auto;
       margin: 0;
       top: 30px;
       left: 30px
-    }
+    }*/
 
   }
 
