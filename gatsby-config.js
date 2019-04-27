@@ -6,6 +6,7 @@ const postCssPlugins = require('./postcss-config.js');
 module.exports = {
   siteMetadata: {
     url: siteConfig.url,
+    siteUrl: 'https://arnmstore.netlify.com/',
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
@@ -139,6 +140,7 @@ module.exports = {
             site {
               siteMetadata {
                 url
+                siteUrl
               }
             }
             allSitePage(

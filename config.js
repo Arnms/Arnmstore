@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://arnmstore.netlify.com/',
   title: 'Arnmstore',
   subtitle: 'Junior Programmer.',
   copyright: 'Arnm © All rights reserved.',
