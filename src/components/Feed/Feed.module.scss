@@ -9,6 +9,15 @@
       @include margin-bottom(.5);
     }
 
+    &-underline {
+      max-width: $layout-post-width;
+      border-bottom: 1px solid $color-gray-border;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
     &-title {
       font-size: $typographic-base-font-size * 1.6875;
       @include line-height(1.5);

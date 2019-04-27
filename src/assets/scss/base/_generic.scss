@@ -38,42 +38,42 @@ h6 {
 h1 {
   font-size: $typographic-base-font-size * 2.5;
   @include line-height(2);
-  @include margin-top(4);
+  @include margin-top(2);
   @include margin-bottom(1);
 }
 
 h2 {
   font-size: $typographic-base-font-size * 1.6875;
   @include line-height(1.5);
-  @include margin-top(2);
+  @include margin-top(1.75);
   @include margin-bottom(.5);
 }
 
 h3 {
   font-size: $typographic-base-font-size * 1.375;
   @include line-height(1);
-  @include margin-top(2);
+  @include margin-top(1.5);
   @include margin-bottom(.5);
 }
 
 h4 {
   font-size: $typographic-base-font-size * 1.2;
   @include line-height(1);
-  @include margin-top(1.5);
+  @include margin-top(1);
   @include margin-bottom(.5);
 }
 
 h5 {
-  font-size: $typographic-base-font-size;
+  font-size: $typographic-base-font-size * 1.1;
   @include line-height(1);
-  @include margin-top(2.5);
+  @include margin-top(1);
   @include margin-bottom(.5);
 }
 
 h6 {
   font-size: $typographic-base-font-size;
   @include line-height(1);
-  @include margin-top(2.5);
+  @include margin-top(1);
   @include margin-bottom(.5);
 }
 
@@ -85,8 +85,8 @@ img {
 }
 
 hr {
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin-top: 42px;
+  margin-bottom: 42px;
   border: 0;
   color: $color-base;
   display: block;
@@ -115,15 +115,19 @@ strong {
   font-weight: 600;
 }
 
-ul {
+ul, ol {
   list-style: square;
   @include margin-bottom(1);
 
   & li {
     padding: 0 5px;
     margin-bottom: 10px;
-  }
 
+    & > p {
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 p {
@@ -132,6 +136,7 @@ p {
 }
 
 blockquote {
+  margin: 30px 0px;
   padding: 0;
   font-style: italic;
   text-align: center;
@@ -151,6 +156,19 @@ figcaption {
   font-style: italic;
   margin-bottom: 0;
   text-align: center;
+}
+
+pre, .md-message {
+  width: 100%;
+  padding: 25px 20px;
+  background-color: $color-gray-l3;
+  box-shadow: 2px 2px 10px 0px $color-gray-l2;
+  border-radius: 8px;
+
+  & code.language-text {
+    line-height: $typographic-base-line-height;
+    font-family: $typographic-font-family;
+  }
 }
 
 .anchor {

@@ -2,6 +2,8 @@
 @import '../../assets/scss/mixins';
 
 .post {
+  padding: 30px 0px;
+  
   &__underline {
     max-width: $layout-post-width;
     border-bottom: 1px solid $color-gray-border;
@@ -13,7 +15,7 @@
 
   &__footer {
     max-width: $layout-post-width;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 15px;
   }
 

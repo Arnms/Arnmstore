@@ -21,6 +21,7 @@ const Feed = ({ edges }) => (
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
         <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        <div className={styles['feed__item-underline']}></div>
       </div>
     ))}
   </div>
