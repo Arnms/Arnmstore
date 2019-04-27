@@ -45,13 +45,7 @@ const createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).then((res) => {
-    if (res.errors) {
-      throw new Error(res.errors);
-    }
-
-    return res;
-  });
+  `);
 
   const { edges } = result.data.allMarkdownRemark;
 
