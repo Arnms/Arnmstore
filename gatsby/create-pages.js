@@ -28,10 +28,10 @@ const createPages = async ({ graphql, actions }) => {
   });
 
   // Posts and pages from markdown
-  const result = await graphql(`
+  await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { draft: true } }
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
@@ -50,25 +50,23 @@ const createPages = async ({ graphql, actions }) => {
       throw new Error(res.errors);
     }
 
-    return res;
-  });
+    const { edges } = res.data.allMarkdownRemark;
 
-  const { edges } = result.data.allMarkdownRemark;
-
-  _.each(edges, (edge) => {
-    if (_.get(edge, 'node.frontmatter.template') === 'page') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/page-template.js'),
-        context: { slug: edge.node.fields.slug }
-      });
-    } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
-      });
-    }
+    _.each(edges, (edge) => {
+      if (_.get(edge, 'node.frontmatter.template') === 'page') {
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve('./src/templates/page-template.js'),
+          context: { slug: edge.node.fields.slug }
+        });
+      } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve('./src/templates/post-template.js'),
+          context: { slug: edge.node.fields.slug }
+        });
+      }
+    });
   });
 
   // Feeds
