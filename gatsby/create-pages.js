@@ -47,7 +47,7 @@ const createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const { edges } = result.data.allMarkdownRemark;
+  const { edges } = await result.data.allMarkdownRemark;
 
   _.each(edges, (edge) => {
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
