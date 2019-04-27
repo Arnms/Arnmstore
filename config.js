@@ -23,7 +23,7 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Arnm (In-Cheol Jung)',
+    name: 'Arnm',
     photo: '/photo.png',
     bio: 'Junior Programmer.',
     contacts: {
