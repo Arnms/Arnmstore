@@ -31,12 +31,13 @@ const createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { content: { ne: true } } }
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
             frontmatter {
               template
+              draft
             }
             fields {
               slug
