@@ -31,7 +31,7 @@ const createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { draft: { ne: true } } }
+        filter: { frontmatter: { content: { ne: true } } }
       ) {
         edges {
           node {
@@ -45,13 +45,7 @@ const createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).then((res) => {
-    if (res.errors) {
-      throw new Error(res.errors);
-    }
-
-    return res;
-  });
+  `);
 
   const { edges } = await result.data.allMarkdownRemark;
 
