@@ -46,7 +46,7 @@ const createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
   const { edges } = await result.data.allMarkdownRemark;
 
@@ -61,6 +61,12 @@ const createPages = async ({ graphql, actions }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'view') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/view-template.js'),
         context: { slug: edge.node.fields.slug }
       });
     }
